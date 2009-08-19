@@ -1,7 +1,7 @@
 /** 	
 * @file queue.cpp
 * @author Nitesh Bhargava 
-* @brief defintion file for the queue.h
+* @brief main execution file
 * @par description: definition file for the header file "LinkedList"
 *	
 */

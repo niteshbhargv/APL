@@ -1,45 +1,66 @@
-/**
-* @author Nitesh Bhargava CS12M032
-* @date 21/08/12
-* @mainpage: The Josephus problem
-* @par approach:
-* - this problem can be solved using a circular link list and traverse the link list 
-* - exactly n nodes (n is the given as input) save the value of the node and delete the node
-* - and do this activity until the link list is empty we now print values into otput file
-*
-*/	
-#include <iostream>
-#include <fstream>
+#include<iostream>
+#include "jos.h"
 using namespace std;
+
+/*void joseph(int no,int jump)
+{
+	queueLinkedList *queue = new queueLinkedList();
+	// jospert(int no,int jump)
+	int jmp,temp;
+	temp = no;
+	no = no+1;
+	jmp = jump;
+	// inserting the elements in the queue
+	while(temp>0)	
+	{
+		queue->enqueue(no-temp);
+		temp--;
+	}
+	// joseph permutation
+	int i = jump;
+	while(queue->count() !=0)
+	{
+		while(i>1){
+		queue->enqueue(queue->dequeue());
+		i--;	
+		}
+	i=jump;
+	cout << queue->dequeue()<<",";
+	}
+}*/
 int main()
 {
-ofstream outstream;
-outstream.open("output.txt");
-char a = 1;
-char b = 2;
-int ab = int(a);
-int ba = int(b);
-int abba = 10*ab+ba;
-cout << abba;
-ifstream instream ("input.txt");
-string line;
-if(instream.is_open())
-{
-	while(instream.good())
+	jos prob;
+	int temp,jmp;
+	char arr[256];
+	int no,jump,i;
+	cin.getline(arr,256);
+	while(arr[0]!='$')
 	{
-		getline(instream,line);
-		for(size_t i=0; i<line.length(); i++)				
-		outstream<<endl<<line.at(i);
-		// convert string to intger
-		// or 
-		//implement a stack here which will take the number from push(line.at(i))
- 		// to generate the no we will be popping the items and multiplying it with the number 
-		// i
+		no = 0;
+		jump = 0;
+		i=0;
+	
+			while(arr[i]>='0'&& arr[i]<='9'){
+				no = (no +(arr[i]-'0'))*10;
+				i++;}
+			no/=10;
+
+			while(arr[i]<'0'||arr[i]>'9')
+				i++;
+			while(arr[i]>'0'&& arr[i]<'9'){
+				jump = (jump +(arr[i]-'0'))*10;
+				i++;}
+			prob.joseph(no,jump/10);
+			cout << "$\n";
+	
+		cin.getline(arr,256);
+		
 	}
-	instream.close();
+	cout << "$$";
 }
-outstream.close();
+	
+	
 
 
-return 0;
-}
+

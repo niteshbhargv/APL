@@ -4,28 +4,28 @@
 using namespace std;
 
 class node{
-	string data;
+	int data;
 	node * next;
 	
 	public:
-	string getData();
+	int getData();
 	node();	
-	void setData(string);
+	void setData(int);
 	node* getNext();
 	void setNext(node*);
 };
 
-class stackLinkedList{
+class queueLinkedList{
 	node* start;
 	
 	public:
-	stackLinkedList();// constructor
-	// various stack functions
-	void push(string);
-	void pop();
+	queueLinkedList(); // constructor
+	// various queue functions
+	void enqueue(int);
+	int dequeue();
 	void displayItems();
-	void count();
-	string topItem();
+	int count();
+	int frontItem();
 	void palindrome();
-	
+	void josper(int);
 };

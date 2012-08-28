@@ -1,7 +1,7 @@
 /**
 * @file main.cpp
 * @brief main execution file
-* @mainpage The Josephus Problem
+* @mainpage: The Josephus Problem
 * @par Problem Definition:
 *The Josephus problem is defined as follows. Suppose that there are n people arranged in a circle and that
 *we are given a positive integer m ≤ n . Beginning with a designated first person, we proceed around the

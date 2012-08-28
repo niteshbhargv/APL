@@ -1,35 +1,4 @@
-/**
-* @file linkedList.h
-* @author Nitesh Bhargava
-* @brief header file for the declaration of the node class and linkedList class
-*
-* node class: 
-* 	@par private members:
-*	-data
-*	-next pointer
-* 	@par public members:
-*		- getData();
-* 	        - node();
-*	        - setData(int);
-*        	- getNext();
-*       	- setNext(node*);
-*
-* @par linkedList class:
-*	@par private members:
-		- start pointer
-*		
-*	@par public members: 
-*		- push(int);
-*		- pop();
-*	        - displayItems();
-*		- count();
-*		- int topItem();
-*		
-*
-*	@date 27/08/12
-*
-*
-*/
+// Nitesh Bhargava CS12M032
 #include<iostream>
 
 using namespace std;

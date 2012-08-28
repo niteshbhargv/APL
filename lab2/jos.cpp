@@ -1,43 +1,42 @@
 /**
-* @file jos.cpp
-* @brief defintion file for jos.h	
 * @author Nitesh Bhargava CS12M032
 * @date 21/08/12
+* @mainpage: The Josephus problem
 * @par approach:
-* - here we remove the elements from the front and enqueue until we get the desired value and then dequeue it.
-* - we continue this until our queue is empty	
+* - this problem can be solved using a circular link list and traverse the link list 
+* - exactly n nodes (n is the given as input) save the value of the node and delete the node
+* - and do this activity until the link list is empty we now print values into otput file
 *
-* 
 */	
 #include <iostream>
 #include <string>
-#include "jos.h" /// definition of jos class is being defined here
+#include "jos.h"
 using namespace std;
 void jos::joseph(int no,int jump)
 {
-	queueLinkedList *queue = new queueLinkedList(); /// creating the queue 
+	queueLinkedList *queue = new queueLinkedList();
+	// jospert(int no,int jump)
 	int jmp,temp;
 	temp = no;
 	no = no+1;
 	jmp = jump;
-	/// inserting the elements in the queue
+	// inserting the elements in the queue
 	while(temp>0)	
 	{
 		queue->enqueue(no-temp);
 		temp--;
 	}
-
-	///Approach
+	// joseph permutation
 	int i = jump;
 	while(queue->count() !=0)
 	{
 		while(i>1)
 		{
-			queue->enqueue(queue->dequeue()); /// remove the elements from the front and enqueue until we get the desired value
+			queue->enqueue(queue->dequeue());
 			i--;	
 		}
 		i=jump;
-		cout << queue->dequeue()<<","; /// Remove the desired element
+		cout << queue->dequeue()<<",";
 	}
 
 }

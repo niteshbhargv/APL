@@ -1,0 +1,116 @@
+\section{\-Ternery\-Tree \-Class \-Reference}
+\label{class_ternery_tree}\index{\-Ternery\-Tree@{\-Ternery\-Tree}}
+
+
+{\ttfamily \#include $<$ternerytree.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Ternery\-Tree} ()
+\item 
+virtual {\bf $\sim$\-Ternery\-Tree} ()
+\item 
+{\bf node} $\ast$ {\bf \-Getroot} ()
+\item 
+void {\bf \-Setroot} ({\bf node} $\ast$val)
+\item 
+void {\bf insert} (string value)
+\item 
+void {\bf search} (string)
+\item 
+{\bf node} $\ast$ {\bf display} ({\bf node} $\ast$, string)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-Ternery\-Tree@{\-Ternery\-Tree}!\-Ternery\-Tree@{\-Ternery\-Tree}}
+\index{\-Ternery\-Tree@{\-Ternery\-Tree}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{\-Ternery\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Ternery\-Tree\-::\-Ternery\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_ternery_tree_a8459b28ad48143690380e42e64325461}
+\-Default constructor
+
+constructor for the ternery tree \index{\-Ternery\-Tree@{\-Ternery\-Tree}!$\sim$\-Ternery\-Tree@{$\sim$\-Ternery\-Tree}}
+\index{$\sim$\-Ternery\-Tree@{$\sim$\-Ternery\-Tree}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{$\sim$\-Ternery\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Ternery\-Tree\-::$\sim$\-Ternery\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_ternery_tree_a7ea596a5213c2fa34a6f455d2e91235d}
+\-Default destructor
+
+destructor for the ternery tree 
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-Ternery\-Tree@{\-Ternery\-Tree}!display@{display}}
+\index{display@{display}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node} $\ast$ {\bf \-Ternery\-Tree\-::display} (
+\begin{DoxyParamCaption}
+\item[{{\bf node} $\ast$}]{n, }
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}\label{class_ternery_tree_a30ed55720c6718ad4bc0692deb39da77}
+if left child is not null recurse there
+
+if right child is not null recurse there
+
+if equal child is not null recurse there \index{\-Ternery\-Tree@{\-Ternery\-Tree}!\-Getroot@{\-Getroot}}
+\index{\-Getroot@{\-Getroot}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{\-Getroot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node}$\ast$ {\bf \-Ternery\-Tree\-::\-Getroot} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{class_ternery_tree_a45d5d8080bdc3e82c1f16faa447918ba}
+\-Access root \begin{DoxyReturn}{\-Returns}
+\-The current value of root 
+\end{DoxyReturn}
+\index{\-Ternery\-Tree@{\-Ternery\-Tree}!insert@{insert}}
+\index{insert@{insert}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ternery\-Tree\-::insert} (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}\label{class_ternery_tree_a36f25d98c462bae54aec8066e1551e5e}
+copy constructor for the ternery tree 
+\begin{DoxyParams}{\-Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\index{\-Ternery\-Tree@{\-Ternery\-Tree}!search@{search}}
+\index{search@{search}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ternery\-Tree\-::search} (
+\begin{DoxyParamCaption}
+\item[{string}]{prefix}
+\end{DoxyParamCaption}
+)}\label{class_ternery_tree_a318ba9140f804b4c2d5e1c21128205b5}
+search on the right subtree
+
+search on the left subtree
+
+string reached at the end
+
+condition for the exact match
+
+calling autocomplete function \char`\"{}display\char`\"{}
+
+else traverse down the equal part of the subtree \index{\-Ternery\-Tree@{\-Ternery\-Tree}!\-Setroot@{\-Setroot}}
+\index{\-Setroot@{\-Setroot}!TerneryTree@{\-Ternery\-Tree}}
+\subsubsection[{\-Setroot}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ternery\-Tree\-::\-Setroot} (
+\begin{DoxyParamCaption}
+\item[{{\bf node} $\ast$}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [inline]}}\label{class_ternery_tree_af021c7e6960437a26dfa2bdca5ae152d}
+\-Set root 
+\begin{DoxyParams}{\-Parameters}
+{\em val} & \-New value to set \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf ternerytree.\-h}\item 
+{\bf ternerytree.\-cpp}\end{DoxyCompactItemize}

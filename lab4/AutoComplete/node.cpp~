@@ -1,0 +1,15 @@
+#include "node.h"
+
+node::node()
+{
+    //ctor
+}
+node :: node(char data,bool IsWord)
+{
+    this->data = data;
+    this->IsWord = IsWord;
+    left = NULL;
+    right = NULL;
+    equal = NULL;
+
+}
